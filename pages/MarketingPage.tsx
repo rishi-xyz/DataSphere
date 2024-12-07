@@ -4,7 +4,7 @@ import { MarketingHero } from '@/components/MarketingHero'
 import { MarketingFeaturesSection } from '@/components/MarketingFeatures'
 import { MarketingFooter } from '@/components/MarketingFooter'
 
-export const MarketingPage = () => {
+const MarketingPage = () => {
   return (
     <>
       <MarketingHeader />
@@ -14,3 +14,6 @@ export const MarketingPage = () => {
     </>
   )
 }
+
+
+export default MarketingPage;

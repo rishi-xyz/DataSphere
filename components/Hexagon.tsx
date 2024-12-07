@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, ComponentPropsWithRef } from "react";
+import { ComponentPropsWithoutRef } from "react";
 import { twMerge } from "tailwind-merge";
 
 export const Hexagon = (props: ComponentPropsWithoutRef<"svg">) => {

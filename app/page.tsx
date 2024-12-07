@@ -1,6 +1,4 @@
-import {MarketingPage} from "@/pages/MarketingPage";
-import Image from "next/image";
-
+import MarketingPage from "@/pages/MarketingPage";
 export default function Home() {
   return(
     <div>

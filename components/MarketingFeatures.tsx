@@ -1,5 +1,5 @@
 "use client"
-import { Grid, Layout, ShieldCheck, Shuffle, Send, Scan, DivideCircle, UserCheck, LayoutDashboard, Leaf, Smartphone, RefreshCcw, Share2, Database, Cloud } from "lucide-react";
+import { Grid, ShieldCheck, LayoutDashboard, Leaf, Smartphone, RefreshCcw, Share2, Database, Cloud } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
