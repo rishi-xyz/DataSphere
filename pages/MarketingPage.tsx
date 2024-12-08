@@ -1,4 +1,4 @@
-import React from 'react'
+"use client"
 import { MarketingHeader } from '../components/MarketingHeader'
 import { MarketingHero } from '@/components/MarketingHero'
 import { MarketingFeaturesSection } from '@/components/MarketingFeatures'

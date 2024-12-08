@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { ConnectKitButton } from "connectkit"
 import React from 'react'
 
 export const MarketingHeader = () => {
@@ -10,10 +10,8 @@ export const MarketingHeader = () => {
                         DataSphere
                     </h2>
                     <div className='mr-5'>
-                        <Button variant={"fushia"} size={"lg"} className='transition duration-300 ease-in-out hover:bg-fuchsia-600  hidden md:inline-flex'>
-                            <div className='absolute inset-0 outline outline-2 -outline-offset-2 outline-fuchsia-500 rounded-xl'></div>
-                            <span  className='leading-5'>Get Started</span>
-                        </Button>
+                        <div className='absolute inset-0 outline outline-2 -outline-offset-2 outline-fuchsia-500/30 rounded-xl'></div>
+                        <ConnectKitButton />
                     </div>
                 </div>
             </div>

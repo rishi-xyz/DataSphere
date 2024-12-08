@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
+import { Web3Provider } from "@/src/providers/Web3Provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,14 +16,14 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title:{
-    default:siteConfig.name,
-    template:`%s | ${siteConfig.name}`
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,
-  icons:[{
-    url:"/dataspherep.png",
-    href:"/dataspherep.png",
+  icons: [{
+    url: "/dataspherep.png",
+    href: "/dataspherep.png",
   }]
 };
 
@@ -32,12 +33,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <Web3Provider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </html>
+    </Web3Provider>
   );
 }
