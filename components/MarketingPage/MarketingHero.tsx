@@ -1,11 +1,11 @@
 "use client"
 import React, { useRef } from "react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import Image from "next/image";
 import DataSphere from "@/public/dataspherep.png";
 import Node1 from "@/assets/node1.png";
 import Node2 from "@/assets/node2.png";
-import { Hexagon } from "./Hexagon";
+import { Hexagon } from "../Hexagon";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 
