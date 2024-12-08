@@ -1,7 +1,8 @@
+"use client"
 import { ConnectKitButton } from "connectkit"
 import React from 'react'
 
-export const MarketingHeader = () => {
+export const Header = () => {
     return (
         <header className='sticky z-40 top-0 bg-zinc-900/50 backdrop-blur-sm'>
             <div className='container' >
